@@ -1,0 +1,41 @@
+/* Custom CSS for Law Firm Blog */
+
+/* Define Custom Colors/Variables */
+:root {
+  --primary-blue: #1e3a8a; /* Deep Blue for Authority */
+  --hero-dark: #111827; /* Very dark background */
+  --hero-gradient-start: #1f2937;
+  --hero-gradient-end: #030712;
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom Background and Text Classes */
+.law-primary-bg {
+  background-color: var(--primary-blue);
+}
+
+.law-primary-text {
+  color: var(--primary-blue);
+}
+
+/* Hero Section Styling with Gradient */
+.hero-section {
+  background-color: var(--hero-dark);
+  /* Adding a subtle gradient for depth */
+  background-image: linear-gradient(
+    135deg,
+    var(--hero-gradient-start) 0%,
+    var(--hero-gradient-end) 100%
+  );
+}
+
+/* Custom card shadow for consistency and professionalism */
+.card-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+/* Hover effect for titles/links */
+.read-more:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
